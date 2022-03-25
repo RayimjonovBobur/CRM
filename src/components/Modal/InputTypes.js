@@ -1,0 +1,16 @@
+export const STRING = "STRING";
+export const NUMBER = "NUMBER";
+export const SELECT = "SELECT";
+export const IMAGE = "IMAGE";
+export const PICTURE_WALL = "PICTURE_WALL";
+export const DATE = "DATE";
+export const PHONE = "PHONE";
+export const RADIO = "RADIO";
+export const CHECKBOX = "CHECKBOX";
+export const MAP = "MAP";
+export const PASSWORD = "PASSWORD";
+export const TEXTAREA = "TEXTAREA";
+export const UPLOAD = "UPLOAD";
+export const BUTTON = "BUTTON";
+export const MULTIPLE_SELECT = "MULTIPLE_SELECT";
+export const SEARCH_SELECT = "SEARCH_SELECT";

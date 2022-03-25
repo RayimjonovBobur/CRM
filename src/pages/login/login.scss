@@ -1,0 +1,34 @@
+.login_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login_form {
+    width: 350px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    .ant-form-item-required{
+      // border: 1px solid red;
+      width: 80px;
+    }
+  }
+  .login_wrapper .ant-input,
+  .login_wrapper .ant-input-password {
+    border-radius: var(--input-radius) !important;
+    background-color: var(--input-bg) !important;
+    // border: none !important;
+    margin: 0 !important;
+    // height: 30px !important;
+
+  }
+  .login_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  

@@ -1,0 +1,54 @@
+.toolbar__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 5px;
+  height: 100%;
+  width: 80px;
+
+  .child-page__button {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.07s;
+    padding: 0;
+
+    svg {
+      visibility: hidden;
+      height: 100%;
+      width: 11px;
+    }
+
+    &:hover {
+      color: #ffffff;
+
+      svg {
+        visibility: visible;
+      }
+    }
+  }
+
+  .green_btn {
+    background-color: #24c33d;
+  }
+
+  .yellow_btn {
+    background-color: #f7b629;
+
+    svg {
+      path {
+        stroke: #523d11;
+        fill: #523d11;
+      }
+    }
+  }
+
+  .red_btn {
+    background-color: #f65951;
+  }
+}

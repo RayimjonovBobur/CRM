@@ -1,0 +1,75 @@
+.bottom__tabs_relative {
+  position: relative;
+  z-index: 10;
+  .clear__all {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #aaa;
+    color: #fff;
+    border: none;
+    height: 96%;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: var(--main-color);
+    }
+  }
+}
+.site-footer__tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .bottom__btn {
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    background-color: #fff;
+    border: none;
+    border-right: 1px solid #ccc;
+    outline: none !important;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: blue;
+      svg {
+        path {
+          fill: rgb(24, 0, 240) !important;
+        }
+      }
+    }
+    span {
+      margin-left: 10px;
+    }
+    .bottom__cross {
+      margin-top: 6px;
+    }
+    svg {
+      width: 17px !important;
+      height: 17px;
+      path {
+        fill: #999 !important;
+      }
+    }
+  }
+  .activeBottomKey {
+    background-color: blue !important;
+    color: #fff !important;
+    svg {
+      path {
+        fill: rgb(255, 255, 255) !important;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          fill: rgb(255, 255, 255) !important;
+        }
+      }
+    }
+  }
+}
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab {
+  background-color: #fff !important;
+}

@@ -1,0 +1,15 @@
+export const accessValues = [
+    {text:"Asosiy Oyna", value: 1},
+    {text: "Mijozlar ro'yxati", value: 2},
+    {text: "Dasturlar", value: 3},
+    {text: "Servis", value: 4},
+    {text: "Faoliyat turlari", value: 5},
+    {text: "Xodimlar", value: 6},
+    {text: "Yo'nalishlar", value: 7},
+    {text: "Viloyatlar", value: 8},
+    {text: "Shahar Tuman", value: 9},
+    {text: "Hudud", value: 10},
+    {text: "Lavozimlar", value: 11},
+    {text: "Reklamalar", value: 12},
+    {text: "Foydalanuvchilar", value: 13},
+];

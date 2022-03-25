@@ -1,0 +1,69 @@
+.toolbar {
+  background-color: var(--main-color);
+  height: 35px;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  margin-top: 1px;
+  justify-content: space-between;
+  align-items: center;
+
+  .toolbar__title {
+    display: flex;
+    padding: 0 10px;
+    height: 95%;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+
+    svg {
+      color: #ffffff;
+      width: 21px;
+      margin-top: 4.6px;
+      height: 21px;
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    .toolbar__title-text {
+      font-size: 1.1em;
+      margin-left: 9px;
+    }
+  }
+
+  .toolbar__tools {
+    flex-grow: 1;
+    padding: 0 6px;
+
+    button {
+      background-color: rgba(200, 200, 200, 0);
+      border: 0;
+      padding: 0 20px;
+      border-radius: 0;
+      transition: 0.05s;
+
+      &:hover {
+        background-color: rgba(200, 200, 200, 0.2);
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+
+      svg {
+        position: relative;
+        top: 3px;
+        width: 19px;
+        height: 19px;
+
+        path {
+          fill: #ddd;
+        }
+      }
+    }
+  }
+}

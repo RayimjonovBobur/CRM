@@ -1,0 +1,20 @@
+.tab-select__option {
+  .ant-select-single.ant-select {
+    width: 100%;
+    padding: 8px 10px 8px 10px;
+    .ant-select-selector {
+      height: 32px !important;
+      display: flex;
+      align-items: center;
+      padding: 0 !important;
+    }
+    .ant-select-arrow {
+      position: absolute !important;
+      right: 18px !important;
+    }
+  }
+}
+
+.tabinput_svg svg {
+  margin-top: 4px !important;
+}
