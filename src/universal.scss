@@ -46,12 +46,19 @@
   border: none !important;
   border-right: 1px solid #999 !important;
 }
-.img__skelaton{
- position: absolute;
- z-index: 15;
- margin-left: -8px;
- width: 30px;
- .ant-skeleton-avatar {
-   width: 30px;
- }
+.img__skelaton {
+  position: absolute;
+  z-index: 15;
+  margin-left: -8px;
+  width: 30px;
+  .ant-skeleton-avatar {
+    width: 30px;
+  }
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 5px;
 }

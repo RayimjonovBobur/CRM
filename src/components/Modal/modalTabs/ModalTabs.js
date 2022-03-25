@@ -19,7 +19,7 @@ const ModalTabs = ({ tabs, i, handleChangeValue }) => {
               }}
             >
               {forma?.inputs?.map((input) => (
-                <ModalInput
+                <ModalInput 
                   {...input}
                   key={input?.name}
                   handleChangeValue={handleChangeValue}
