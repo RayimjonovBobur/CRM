@@ -13,8 +13,8 @@ import { LoadingOutlined } from "@ant-design/icons";
 const TabInput = ({ record, name, type, tabName, options, filePath }) => {
   const { values } = useSelector((state) => state?.tabs_reducer);
   const { allData } = useSelector((state) => state?.unsaved_reducer);
-  const [is, setIs] = useState(true);
-  const [isItem, setIsItem] = useState(true);
+  // const [is, setIs] = useState(true);
+  // const [isItem, setIsItem] = useState(true);
   const dispatch = useDispatch();
 
   function handleChange(e) {
@@ -102,50 +102,18 @@ const TabInput = ({ record, name, type, tabName, options, filePath }) => {
       break;
     case UPLOAD:
       input = (
-        <>
-          <label htmlFor="id" className="tabinput_svg">
-            {is ? (
-              isItem ? (
-                <UploadFileOilasi />
-              ) : (
-                <Checked />
-              )
-            ) : (
-              <>
-                <Spin size="small" />
-              </>
-            )}
-          </label>
-          <input
-            type="file"
-            name="userf"
-            id="id"
-            style={{ display: "none", visibility: "none" }}
-            onChange={(e) => {
-              if (is) {
-                setIs(false);
-                setTimeout(() => {
-                  setIs(true);
-                  obji(e);
-                  setIsItem(false);
-                }, 1000);
-              }
-            }}
-          />
-        </>
-
-        // <UploadFile
-        //   id="file-uploder"
-        //   filePath={filePath}
-        //   name={name}
-        //   onChange={(e) => handleChange(e)}
-        //   Iconic="UploadFileOilasi"
-        //   placeholder={"placeholder"}
-        //   dispatch={dispatch}
-        //   values={values}
-        //   // imageUrl={imgUrl}
-        //   // setUrl={setImgUrl}
-        // />
+        <UploadFile
+          id="file-uploder"
+          filePath={filePath}
+          name={name}
+          onChange={(e) => handleChange(e)}
+          Iconic="UploadFileOilasi"
+          placeholder={"placeholder"}
+          dispatch={dispatch}
+          values={values}
+          // imageUrl={imgUrl}
+          // setUrl={setImgUrl}
+        />
       );
 
       break;
