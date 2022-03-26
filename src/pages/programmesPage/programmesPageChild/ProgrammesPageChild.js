@@ -11,7 +11,7 @@ const ProgrammesPageChild = ({ activeKey }) => {
     setHeight(parseInt(dad.getBoundingClientRect().height));
   }, []);
   return (
-    <div>
+    <div className="programms_content">
       <Toolbar />
       <div className="my__layout_child" style={{ height: height-40+ "px" }}>
         <ChildTabs data={ProgrammsTemplate} activeKey={activeKey}></ChildTabs>
