@@ -45,7 +45,7 @@ const CommonTabTemplate = {
         {
           name: "category_id",
           type: SELECT,
-          label: "Yunalish turi",
+          label: "Yo'nalish turi",
           placeholder: "Yo'nalishlar turi",
           template: YunalishlarTemplate,
           options: "category_name",

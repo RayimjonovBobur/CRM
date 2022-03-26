@@ -46,7 +46,7 @@ const CommetsTabTemplate = {
           type={STRING}
         />
       ),
-      key: "izox",
+      key: "general_info",
       width: "40%",
       align: "center",
     },

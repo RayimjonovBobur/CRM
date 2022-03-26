@@ -10,7 +10,7 @@ const BigLength = ({ text }) => {
     <Popover placement="leftTop" content={content}>
       <div className="hodim-template">
         <div className="box-shadow" />
-        {text}  
+        {text}
       </div>
     </Popover>
   );
