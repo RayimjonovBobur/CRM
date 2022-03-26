@@ -76,7 +76,7 @@ export const NewProgrammsTemplate = {
           gridRow: "2 / 3",
           label: "Qabul qilgan xodim",
           options: "workers",
-          template: XodimlarTemplate,
+          // template: XodimlarTemplate,
         },
         {
           name: "status_id",
