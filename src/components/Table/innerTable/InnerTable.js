@@ -8,20 +8,21 @@ import { v4 as uuidv4 } from "uuid";
 const InnerTable = ({ innerTable }) => {
   const dispatch = useDispatch();
   const { values } = useSelector((state) => state?.tabs_reducer);
+  const currentPage = useSelector((state) => state.tabs_reducer?.currentPage);
 
   const addRow = () => {
     dispatch(setValuesKey({ [innerTable?.name]: [innerTable?.CreateObj] }));
     const oldData = [...values?.[innerTable?.name]];
 
     oldData.push({ ...innerTable?.CreateObj, rowId: uuidv4() });
-    
+
     dispatch(setValues({ ...values, [innerTable?.name]: oldData }));
   };
 
   return (
     <div className="innerTable">
       <button
-        style={{ margin: "10px 0" }}
+        style={{ margin: "10px 0", top: currentPage.style?.top }}
         className="tab-add__input"
         onClick={addRow}
         type="button"

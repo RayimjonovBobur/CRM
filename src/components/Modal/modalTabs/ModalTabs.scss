@@ -4,3 +4,9 @@
 .ant-tabs-bottom > div > .ant-tabs-nav {
   margin-bottom: 10px;
 }
+
+.tab_pane.ant-tabs > .ant-tabs-nav .ant-tabs-nav-list,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list {
+  margin-left: 50px !important;
+  padding: 0.5rem;
+}

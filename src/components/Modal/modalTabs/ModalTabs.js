@@ -6,7 +6,7 @@ import "./ModalTabs.scss";
 
 const ModalTabs = ({ tabs, i, handleChangeValue }) => {
   return (
-    <Tabs defaultActiveKey={[0]}>
+    <Tabs defaultActiveKey={[0]} className='tab_pane'>
       {tabs?.map((tab, i) => (
         <Tabs.TabPane tab={tab.text} key={i}>
           {tab.form?.map((forma, i) => (

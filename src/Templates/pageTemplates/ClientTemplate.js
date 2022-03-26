@@ -15,8 +15,8 @@ import ContactsTemplate from "../ClientTemlates/ClientModalTabs/ContactsTemplate
 import CommonTemplate from "../ClientTemlates/ClientModalTabs/CommonTemplate";
 
 const ClientTemplate = {
-  
   ...PotensialClientTemplate,
+  text: "Mijozlar Ro'yxati",
   modal: {
     style: {
       width: 1200,
@@ -25,7 +25,9 @@ const ClientTemplate = {
     tabs: [CommonTemplate, ContactsTemplate, CommentsTemplate],
   },
   tabs: [PotensialClientTemplate, RealClientTemplate, RejactClientTemplate],
-  text: "Mijozlar Ro'yxati",
+  style: {
+    top: "75px",
+  },
   childText: PotensialClientTemplate.text,
 };
 

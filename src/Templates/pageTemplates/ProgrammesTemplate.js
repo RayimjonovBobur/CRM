@@ -15,6 +15,9 @@ const ProgrammsTemplate = {
     SubmittedProgrammesTemplate,
     RejactProgrammesTemplate,
   ],
+  style: {
+    top: "265px",
+  },
   childText: NewProgrammsTemplate.text,
 };
 
