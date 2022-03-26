@@ -43,6 +43,7 @@ const Toolbar = () => {
 
   const handleModalClick = () => {
     dispatch(toggleModal(true));
+    localStorage.clear();
   };
 
   const onRemove = async () => {
