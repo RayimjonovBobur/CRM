@@ -57,13 +57,7 @@
   }
 }
 
-<<<<<<< HEAD
-
-=======
-// .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
-// .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
-//   position: absolute;
-//   margin-left: 50px;
-//   margin-top: 5px;
-// }
->>>>>>> 8809809f4de73b1a511e09f9291d34d958e0ac68
+.ant-select-single.ant-select-sm:not(.ant-select-customize-input):not(.ant-select-customize-input)
+  .ant-select-selection-search-input {
+  height: 30px;
+}
