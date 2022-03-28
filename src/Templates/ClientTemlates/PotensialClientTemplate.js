@@ -76,7 +76,7 @@ const PotensialClientTemplate = {
       key: "general_info",
       width: "60%",
       align: "center",
-      render: (text) => <BigLength text={text} />,
+      render: (text) => "лфоывфы",
     },
 
     {
