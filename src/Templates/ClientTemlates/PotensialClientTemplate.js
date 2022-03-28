@@ -9,7 +9,8 @@ import ContactsTemplate from "./ClientModalTabs/ContactsTemplate";
 import CommentsTemplate from "./ClientModalTabs/CommentsTabTemplate";
 import ImgZoom from "../../components/image zoom/ImgZoom";
 import GetLocation from "../../components/Location/Location";
-import { Base } from "../../BaseUrl";
+
+ 
 const PotensialClientTemplate = {
   text: "Potensial mijozlar",
   accessKey: 2,
@@ -71,7 +72,7 @@ const PotensialClientTemplate = {
 
     {
       title: "Izox",
-      dataIndex: "general_info",
+      dataIndex: "comment",
       key: "general_info",
       width: "60%",
       align: "center",

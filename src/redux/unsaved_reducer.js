@@ -131,8 +131,9 @@ export const counterSlice = createSlice({
       let arrayWithKeys = [];
       payload &&
         payload?.forEach((item, key) => {
-          arrayWithKeys.push({ ...item, key });
+          arrayWithKeys.push({ ...item, ...item.general_document[0], key });
         });
+      console.log(arrayWithKeys);
       state.mainData = arrayWithKeys;
     },
     setOrderReason: (state, { payload }) => {

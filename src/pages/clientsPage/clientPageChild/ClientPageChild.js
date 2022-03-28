@@ -12,7 +12,7 @@ const ClientPageChild = ({ activeKey }) => {
     const dad = document.getElementById("site__loyout");
     setHeight(parseInt(dad.getBoundingClientRect().height));
   }, []);
-  
+
   return (
     <>
       <Toolbar />

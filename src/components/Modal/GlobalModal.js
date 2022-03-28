@@ -119,6 +119,7 @@ const GlobalModal = () => {
           ? `${mainUrl}/status/${key}`
           : mainUrl
       ).then((res) => {
+        console.log(res.data.data);
         if (res) {
           dispatch(setData(res.data.data));
           dispatch(stopLoading());

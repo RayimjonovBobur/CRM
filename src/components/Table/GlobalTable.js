@@ -3,11 +3,15 @@ import { useEffect, useState } from "react";
 import "./GlobalTable.scss";
 import { useSelector, useDispatch } from "react-redux";
 import FilterColumns from "../../constant/FilterColumns";
-import { setTableItem, setValues, toggleModal } from "../../redux/stored_reducer";
+import {
+  setTableItem,
+  setValues,
+  toggleModal,
+} from "../../redux/stored_reducer";
 
 const GlobalTable = () => {
   const [newColumns, setNewColumns] = useState([]);
-  const { loading } = useSelector((s) => s.tabs_reducer)
+  const { loading } = useSelector((s) => s.tabs_reducer);
 
   const {
     // loading,
@@ -16,7 +20,7 @@ const GlobalTable = () => {
     currentPage,
   } = useSelector((state) => state?.tabs_reducer);
 
-  const { mainData } = useSelector((state) => state?.unsaved_reducer)
+  const { mainData } = useSelector((state) => state?.unsaved_reducer);
   const dispatch = useDispatch();
   const { filters, columns, tableItem } = currentPage;
 
@@ -45,7 +49,7 @@ const GlobalTable = () => {
     setNewColumns(filteredColumns);
   }
 
-  const onClickRow = record => {
+  const onClickRow = (record) => {
     return {
       onClick: () => {
         dispatch(setTableItem([record]));
@@ -55,7 +59,7 @@ const GlobalTable = () => {
           dispatch(setValues({ ...tableItem[0] }));
         }
         dispatch(toggleModal(tableItem));
-      }
+      },
     };
   };
 
