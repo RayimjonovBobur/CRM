@@ -13,8 +13,8 @@ const YunalishlarTemplate = {
   mainUrl: "/categories",
   modal: {
     style: {
-      // width: 500,
-      // marginTop: "-70px"
+      width: 500,
+      marginTop: "-70px"
     },
   },
   form: [

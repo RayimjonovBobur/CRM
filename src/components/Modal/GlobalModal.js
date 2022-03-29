@@ -138,7 +138,7 @@ const GlobalModal = () => {
       title={
         <div
           style={{
-            // width: currentPage?.modal?.style?.width,
+            width: currentPage?.modal?.style?.width,
             cursor: "move",
           }}
           onMouseOver={() => {

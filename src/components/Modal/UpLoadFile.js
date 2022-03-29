@@ -147,7 +147,7 @@ class UploadFile extends React.Component {
       fileIconStyle: {
         position: "relative",
         // backgroundColor: "red",
-        top: "-44px",
+        top: "-23px",
         left: "0px",
         width: "100%",
         height: "100%",
